@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Fundamentos</title>
+    <!-- Tailwind V2 -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container mx-auto">
+        <h1>Hola mundo con tailwind</h1>
+
+        <hr>
+
+        <h2>Botones en Tailwind</h2>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg shadow-md">
+            Boton 1
+        </button>
+        
+        <hr>
+
+        <h2>Puntos de Quiebre</h2>
+        <!--
+        sm	640px	@media (min-width: 640px) { ... }
+        md	768px	@media (min-width: 768px) { ... }
+        lg	1024px	@media (min-width: 1024px) { ... }
+        xl	1280px	@media (min-width: 1280px) { ... }
+        2xl	1536px	@media (min-width: 1536px) { ... }
+        -->
+        <button 
+            class="bg-blue-500 sm:bg-red-500 md:bg-green-500  lg:bg-pink-500 
+            hover:bg-blue-700 
+            text-white font-bold py-2 px-4 rounded-lg shadow-md"
+            >
+            Boton 2
+        </button>
+
+        <hr>
+
+        <h2>Padding y Margin</h2>
+        <!-- 
+            m-auto
+            m => auto, 0 - 96
+            -m => -96 - 0
+            m - mx - my - mt - mr - mb - ml
+         -->
+        <div class="mt-5 p-10 border">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque maxime quaerat officiis!</p>
+        </div>
+
+        <hr>
+
+        <h2>Fuentes</h2>
+        <h3>Font Size</h3>
+        <!-- 
+            link     => https://v2.tailwindcss.com/docs/font-size
+
+            text-xs         =>  0.75rem
+            text-sm         =>  0.875rem
+            text-base       =>  1rem 
+            text-lg         =>  1.125rem
+            text-xl
+            text-2xl
+            text-3xl
+            text-4xl
+            text-5xl
+            text-6xl
+            text-7xl
+            text-8xl
+            text-9xl        =>  8rem
+         -->
+        <p class="text-base sm:text-xl ">Font Size LG</p>
+
+        <h3>Text Color</h3>
+        <p class="text-base text-blue-800 ">Font Size LG</p>
+
+        <h3 class="text-center">Text Alignment</h3>
+        <!-- 
+            text-left
+            text-center
+            text-right
+            text-justify
+         -->
+
+
+        <hr>
+
+
+        <h2 class="mb-10">Border Radius</h2>
+        <!-- 
+            link     => https://v2.tailwindcss.com/docs/border-radius
+
+            rounded-none        0px;
+            rounded-sm          0.125rem;
+            rounded	            0.25rem;
+            rounded-md          0.375rem;
+            rounded-lg	        0.5rem;
+            rounded-xl	        0.75rem;
+            rounded-2xl	        1rem;
+            rounded-3xl	        1.5rem;
+            rounded-full        9999px
+            .............
+         -->
+         <div class="bg-blue-700 text-white p-10 rounded-full text-center w-36 h-36">
+             Border radios
+         </div>
+
+         <hr>
+
+
+        <h2 class="mt-10">width</h2>
+        <!-- 
+            Link => https://v2.tailwindcss.com/docs/width
+         -->
+
+
+    </div>
+    
+
+
+</body>
+</html>
