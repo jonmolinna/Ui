@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tailwind Grid</title>
+    <!-- Tailwind V2 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+<body>
+
+    <div class="container mx-auto">
+        <!-- Flex -->
+        <h2>Flex Direction</h2>
+        <!-- 
+            link => https://tailwindcss.com/docs/flex-direction
+
+            flex-row	
+            flex-row-reverse
+            flex-col
+            flex-col-reverse
+         -->
+        <div class="flex flex-col">
+            <div class="bg-pink-600 text-white text-center p-4 m-2">1</div>
+            <div class="bg-pink-600 text-white text-center p-4 m-2">1</div>
+            <div class="bg-pink-600 text-white text-center p-4 m-2">1</div>
+        </div>
+
+        <hr>
+
+        <!-- Flex Wrap -->
+        <h2>Flex Wrap</h2>
+        <!-- 
+            link => https://tailwindcss.com/docs/flex-wrap
+
+            flex-wrap
+            flex-wrap-reverse
+            flex-nowrap
+         -->
+         <div class="flex flex-row flex-wrap">
+            <div class="bg-pink-600 text-white text-center p-4 m-2 w-60">1</div>
+            <div class="bg-pink-600 text-white text-center p-4 m-2 w-60">2</div>
+            <div class="bg-pink-600 text-white text-center p-4 m-2 w-60">3</div>
+            <div class="bg-pink-600 text-white text-center p-4 m-2 w-60">4</div>
+            <div class="bg-pink-600 text-white text-center p-4 m-2 w-60">5</div>
+        </div>
+
+        <hr>
+
+        <!-- Justify Content -->
+        <h2>Justify Content</h2>
+        <!-- 
+            link => https://tailwindcss.com/docs/justify-content
+
+            justify-start
+            justify-end
+            justify-center
+            justify-between
+            justify-around
+            justify-evenly
+         -->
+         <div class="flex flex-row flex-wrap border-4 justify-center">
+            <div class="bg-pink-600 text-white text-center p-4 m-2 w-60">1</div>
+            <div class="bg-pink-600 text-white text-center p-4 m-2 w-60">2</div>
+            <div class="bg-pink-600 text-white text-center p-4 m-2 w-60">3</div>
+        </div>
+
+        <hr>
+
+        <!-- Justify Items -->
+        <h2>Justify Items</h2>
+        <!-- 
+            link => https://tailwindcss.com/docs/align-items
+
+            items-start
+            items-end
+            items-center
+            items-baseline
+            items-stretch
+         -->
+
+         <div class="flex flex-col bg-pink-200 items-end">
+            <div class="bg-pink-600 text-white text-center p-4 m-2 w-60">1</div>
+            <div class="bg-pink-600 text-white text-center p-4 m-2 w-60">2</div>
+            <div class="bg-pink-600 text-white text-center p-4 m-2 w-60">3</div>
+        </div>
+
+        <hr>
+
+        <!-- Align Content -->
+        <h2>Align Content</h2>
+        <!-- 
+            link => https://tailwindcss.com/docs/align-content
+
+            content-center
+            content-start
+            content-end
+            content-between
+            content-around
+            content-evenly
+         -->
+
+         <div class="bg-pink-200 h-80 flex flex-wrap content-center">
+            <div class="bg-pink-600 text-white text-center p-4 m-2 w-60">1</div>
+            <div class="bg-pink-600 text-white text-center p-4 m-2 w-60">2</div>
+            <div class="bg-pink-600 text-white text-center p-4 m-2 w-60">3</div>
+        </div>
+
+        <hr>
+
+        <!-- Align Self (Children) -->
+        <h2>Align Self (Children)</h2>
+        <!-- 
+            link => https://tailwindcss.com/docs/align-self
+
+            self-auto
+            self-start
+            self-end
+            self-center
+            self-stretch
+            self-baseline
+         -->
+
+         <div class="bg-pink-200 h-80 flex flex-wrap items-start">
+            <div class="bg-pink-600 text-white text-center p-4 m-2 w-60">1</div>
+            <div class="bg-pink-600 text-white text-center p-4 m-2 w-60 self-center">2</div>
+            <div class="bg-pink-600 text-white text-center p-4 m-2 w-60">3</div>
+        </div>
+
+        <hr>
+
+        <!-- Flex (Children) -->
+        <h2>Flex (Children)</h2>
+        <!-- 
+            link => https://tailwindcss.com/docs/flex
+
+            flex-1
+            flex-auto
+            flex-initial
+            flex-none
+         -->
+
+         <div class="bg-pink-200 h-80 flex flex-wrap items-start">
+            <div class="bg-pink-600 text-white text-center p-4 m-2 w-60">1</div>
+            <div class="bg-pink-600 text-white text-center p-4 m-2 w-60 flex-1">2</div>
+            <div class="bg-pink-600 text-white text-center p-4 m-2 w-60">3</div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
