@@ -1,14 +1,16 @@
 import React from "react";
-import Header from "./components/Header";
-import Navbar from "./components/Navbar";
-import ProductContainer from "./components/ProductContainer";
+import DataGridMui from "./components/DataGridMui";
+// import Header from "./components/Header";
+// import Navbar from "./components/Navbar";
+// import ProductContainer from "./components/ProductContainer";
 
 function App() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar />
       <Header />
-      <ProductContainer />
+      <ProductContainer /> */}
+      <DataGridMui />
     </>
   );
 }
