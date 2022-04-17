@@ -1,5 +1,8 @@
 import React from "react";
 import { Box, Button, Grid, Typography } from "@mui/material";
+import DesktopCategories from "./DesktopCategories";
+import MobileCategory from "./MobileCategory";
+import ProductList from "./ProductList";
 
 const ProductContainer = () => {
   return (
@@ -81,7 +84,15 @@ const ProductContainer = () => {
           </Box>
         </Grid>
       </Grid>
+      {/* Desktop category */}
+      <Box sx={{ display: { xs: "none", lg: "block" } }}>
+        <DesktopCategories />
+      </Box>
+      <Box sx={{ display: { xs: "block", lg: "none" } }}>
+        <MobileCategory />
+      </Box>
       {/* Product List */}
+      <ProductList />
     </Box>
   );
 };
