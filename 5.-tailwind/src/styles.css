@@ -1,0 +1,66 @@
+/* tailwindcss utility classes */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 3. UTILITY FIRST API  */
+.btn {
+    @apply py-2 px-4 font-semibold;
+}
+
+.btn-green {
+    @apply rounded-lg shadow-md text-white bg-green-500 hover:bg-green-700
+}
+
+.btn-pink {
+    @apply rounded-lg shadow-md text-white bg-pink-500 hover:bg-pink-700
+}
+
+/* 6.- Directives */
+@layer base {
+    .mi__link {
+        @apply text-cyan-500 underline
+    }
+}
+
+/* 7.- Components  */
+@layer components {
+    .btn-blue {
+        @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700
+    }
+}
+
+/* 8.- Utilities  */
+@layer utilities {
+    .p-21 {
+        padding: 5.5rem;
+    }
+
+    @variants hover, focus {
+        .p-21 {
+            padding: 5.5rem
+        }
+    }
+}
+
+/* 9.- Variants  */
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+/* eliminar las tres anteriores */
+
+/* @variants hover {
+    .rotate-0 {
+        transform: rotate(0deg)
+    }
+}
+
+@responsive {
+    .rotate-0 {
+        transform: rotate(0deg)
+    }
+
+    .rotate-90 {
+        transform: rotate(90deg)
+    }
+} */

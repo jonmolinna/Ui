@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwindcss Curso</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+
+<body>
+
+    <div class="container mx-auto bg-black p-4">
+        <!-- FLEXBOX -->
+        <h2 class="text-white text-2xl mb-3 mx-3">1. FlexBox</h2>
+        <div class="flex gap-8 flex-wrap">
+            <div class="flex-initial text-white font-sans bg-indigo-600 w-40 h-40 text-center text-xl">
+                Flex 1
+            </div>
+            <div class="flex-initial order-2 text-white font-sans bg-indigo-600 w-40 h-40 text-center text-xl">
+                Flex 2
+            </div>
+            <div class="flex-initial order-1 text-white font-sans bg-indigo-600 w-40 h-40 text-center text-xl">
+                Flex 3
+            </div>
+        </div>
+
+        <!-- GRID -->
+        <h2 class="text-white text-2xl m-3">2. Grid</h2>
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7">
+            <div class="text-white text-xl bg-pink-700 h-40">
+                Grid Col 1
+            </div>
+            <div class="text-white text-xl bg-pink-700 h-40">
+                Grid Col 1
+            </div>
+            <div class="text-white text-xl bg-pink-700 h-40">
+                Grid Col 1
+            </div>
+            <div class="text-white text-xl bg-pink-700 h-40">
+                Grid Col 4
+            </div>
+        </div>
+
+        <!-- UTILITY FIRST API -->
+        <h2 class="text-white text-2xl m-3">3. Utility First</h2>
+        <button class="btn btn-green">Click me</button>
+        <button class="btn btn-pink">Click me</button>
+
+        <!-- CONDITIONAL STYLES -->
+        <h2 class="text-white text-2xl m-3">4. Condicional Estilos</h2>
+        <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+            <div class="md:flex">
+                <div class="md:shrink-0">
+                    <img class="h-48 w-full object-cover md:h-full md:w-48"
+                        src="https://res.cloudinary.com/dhdxq3mkm/image/upload/v1643903733/rlou1oguwhxhawlmoabm.png"
+                        alt="">
+                </div>
+                <div class="p-8">
+                    <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
+                        Case de estudio
+                    </div>
+                    <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">
+                        Encontrar clientes para su nuevo negocio
+                    </a>
+                    <p class="mt-2 text-slate-500">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Possimus fuga dolorum minus libero
+                        quaerat?
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pseudo Selectors -->
+        <h2 class="text-white text-2xl m-3">5. Pseudo Selectors</h2>
+        <button class="text-white rounded-full px-3 py-1 bg-red-500 hover:bg-red-700">
+            Hover me
+        </button>
+
+        <!-- Directives -->
+        <h2 class="text-white text-2xl m-3">6. Directives @base</h2>
+        <a href="#" class="mi__link">Esto es un link</a>
+
+        <!-- Components -->
+        <h2 class="text-white text-2xl m-3">7. @Components</h2>
+        <button class="btn-blue">
+            Click me
+        </button>
+
+        <!-- Utilities -->
+        <h2 class="text-white text-2xl m-3">8. @Utilities</h2>
+        <button class="btn-blue hover:p-21">
+            Click me
+        </button>
+
+        <!-- @Variants (ver styles css) -->
+        <h2 class="text-white text-2xl m-3">9. @Variants</h2>
+
+        <!-- Functions -->
+        <h2 class="text-white text-2xl m-3">9. Functions</h2>
+        <!-- 1:19:24 -->
+
+
+
+    </div>
+
+</body>
+
+</html>
