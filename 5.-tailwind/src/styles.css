@@ -64,3 +64,27 @@
         transform: rotate(90deg)
     }
 } */
+
+
+/* 10. Functions */
+/* Usando Screen() */
+/* @media screen(sm) {
+    .rotate-0 {
+        transform: rotate(0deg)
+    }
+} */
+
+@screen sm {
+    .rotate-0 {
+        transform: rotate(0deg)
+    }
+}
+
+/* Usando theme()  */
+.content-area {
+    height: theme('height.60');
+}
+
+.content-area-2 {
+    height: theme('spacing[2.5]');
+}

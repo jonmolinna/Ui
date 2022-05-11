@@ -818,6 +818,32 @@ Ensure the default browser behavior of the `hidden` attribute.
     }
 } */
 
+/* 10. Functions */
+
+/* Usando Screen() */
+
+/* @media screen(sm) {
+    .rotate-0 {
+        transform: rotate(0deg)
+    }
+} */
+
+@media (min-width: 640px) {
+  .rotate-0 {
+    transform: rotate(0deg)
+  }
+}
+
+/* Usando theme()  */
+
+.content-area {
+  height: 15rem;
+}
+
+.content-area-2 {
+  height: 0.625rem;
+}
+
 .hover\:bg-red-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(185 28 28 / var(--tw-bg-opacity));
