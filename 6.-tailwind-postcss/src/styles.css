@@ -1,0 +1,19 @@
+/* Tailwindcss utiity classes */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* postcss config.js */
+/* 1. Post Css */
+input::placeholder {
+    color: black;
+}
+
+/* 2. theme */
+.button {
+    @apply text-center sm:text-left md:text-right lg:text-center
+}
+
+.text-color-indigo {
+    @apply text-indigo-dark
+}
