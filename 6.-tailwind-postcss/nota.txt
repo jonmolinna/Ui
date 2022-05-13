@@ -10,6 +10,3 @@ npx tailwindcss init -p
 
 
 "build": "postcss src/styles.css -o public/output.css --watch"
-
-2:01:58
-

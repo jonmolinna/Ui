@@ -311,6 +311,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 [hidden] {
   display: none;
 }
+h1 {
+  font-size: 1.5rem;
+}
+h2 {
+  font-size: 17px;
+}
+h3 {
+  font-size: 15px;
+}
 *, ::before, ::after {
   --tw-translate-x: 0;
   --tw-translate-y: 0;
@@ -362,6 +371,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(190 24 93 / var(--tw-bg-opacity));
 }
+.bg-slate-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+}
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -369,6 +382,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-gray-900 {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
 /* postcss config.js */
@@ -404,6 +421,45 @@ input::placeholder {
 }
 
 .text-color-indigo {
-  --tw-text-opacity: 1;
-  color: rgb(32 46 120 / var(--tw-text-opacity));
+    /* @apply text-indigo-dark */
+}
+
+/* 3. Extends Variants (no necesitas onfigurar en tailwind.config.js)*/
+.bg-content {
+    /* @apply active:bg-indigo-400 */
+}
+
+/* 4. Plugins */
+.new-btn {
+  --tw-rotate: 1deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transform: rotate(1);
+}
+.new-btn:hover {
+  transform: scale(1);
+}
+
+/* 5. Plugins Components */
+.component {
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  color: #fff;
+}
+.component:hover {
+  color: #000;
+}
+
+/* 6. preset */
+.preset {
+  padding: 4.5rem;
+}
+@media (prefers-color-scheme: dark) {
+  .dark\:bg-gray-800 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+  }
+  .dark\:text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
 }

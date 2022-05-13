@@ -15,5 +15,25 @@ input::placeholder {
 }
 
 .text-color-indigo {
-    @apply text-indigo-dark
+    /* @apply text-indigo-dark */
+}
+
+/* 3. Extends Variants (no necesitas onfigurar en tailwind.config.js)*/
+.bg-content {
+    /* @apply active:bg-indigo-400 */
+}
+
+/* 4. Plugins */
+.new-btn {
+    @apply hover:scale-1 rotate-1;
+}
+
+/* 5. Plugins Components */
+.component {
+    @apply btn btn-blue
+}
+
+/* 6. preset */
+.preset {
+    @apply p-4.5
 }
