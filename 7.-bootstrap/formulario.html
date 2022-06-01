@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- BOOTSTRAP CSS -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <style>
+        body {
+            font-size: 16px;
+            background-color: #2b2b2b;
+            color: #f4f4f4;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Formularios</h1>
+    <form class="border p-4 rounded">
+        <div class="mb-2">
+            <label for="user-name">Nombre</label>
+            <input type="text" class="form-control" id="user-name">
+        </div>
+
+        <!-- Radios -->
+        <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="user-gender" id="user-female">
+            <label class="form-check-label" for="user-female">Mujer</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="user-gender" id="user-male">
+            <label class="form-check-label" for="user-male">Hombre</label>
+        </div>
+
+        <!-- Seleccion -->
+        <div class="mb-2">
+            <label for="select-group">Seleccione una opción</label>
+            <select class="form-control" name="" id="select-group">
+                <option value="">- - -</option>
+                <option value="opcion1">Opción 1</option>
+                <option value="opcion2">Opción 2</option>
+            </select>
+        </div>
+
+        <!-- Correo -->
+        <div class="mb-2">
+            <label for="user-email">Correo electrónico</label>
+            <input type="email" class="form-control" id="user-email">
+        </div>
+
+        <!-- Contraseña -->
+        <div class="mb-2">
+            <label for="user-password">Contraseña</label>
+            <input type="password" class="form-control" id="user-password">
+        </div>
+
+        <!-- Comentario -->
+        <div class="mb-2">
+            <label for="user-comment">Comentarios</label>
+            <textarea class="form-control" name="user-comment" id="user-comment"></textarea>
+        </div>
+
+        <!-- Range -->
+        <div class="mb-2">
+            <label for="range">Range</label>
+            <input type="range" class="form-range" id="range">
+        </div>
+
+        <!-- Termino y Condiciones -->
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="terms-conditions">
+            <label class="form-check-label" for="terms-conditions">Acepto términos y condiciones.</label>
+        </div>
+
+        <!-- Enviar -->
+        <input type="submit" class="btn btn-success" value="Enviar">
+    </form>
+
+    <!-- BOOTSTRAP JS -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+<!-- Control + Shif + L => selecciona todo -->
